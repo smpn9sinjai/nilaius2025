@@ -90,8 +90,8 @@ img {
 <body>
 <center>
 
- 
-<div id="hasil" style"margin:0;overflow:scroll;width:100%;height:100%"></div>
+ <div id='jd'><b>NILAI UJIAN SEKOLAH BERBASIS CHROMEBOOK<br>TAHUN PELAJARAN 2024/2025</b> <br></div>
+<div id="hasil" style="margin:0;overflow:scroll;width:100%;height:100%"></div>
 </center>
 <script>
 go()
@@ -102,7 +102,7 @@ function go(){
      xhr.open("get", "https://script.google.com/macros/s/AKfycbwy3anQV0AopDIYc-otVlZORfhTHnZS7P87N6b7USKCgcGis9u4M97JHqYL_wve0k40/exec", true);
      xhr.onload = function () {
 	  
-	  document.getElementById('hasil').innerHTML='<b>NILAI UJIAN SEKOLAH BERBASIS CHROMEBOOK<br>TAHUN PELAJARAN 2024/2025</b> <br>'+xhr.responseText;
+	  document.getElementById('hasil').innerHTML=xhr.responseText;
           };
       xhr.onerror=function(){ alert('tidak ada jaringan');document.getElementById('hasil').innerHTML=''}
        
