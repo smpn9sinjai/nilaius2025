@@ -104,7 +104,7 @@ function go(){
      xhr.open("get", "https://script.google.com/macros/s/AKfycbwy3anQV0AopDIYc-otVlZORfhTHnZS7P87N6b7USKCgcGis9u4M97JHqYL_wve0k40/exec", true);
      xhr.onload = function () {
 	  
-	  document.getElementById('hasil').innerHTML=xhr.responseText;
+	  document.getElementById('hasil').innerHTML=xhr.responseText+'<br><br><br><br>';
           };
       xhr.onerror=function(){ alert('tidak ada jaringan');document.getElementById('hasil').innerHTML=''}
        
